@@ -1,14 +1,14 @@
-function [ P1,obj] = Mytest(X,para,Xt,Y)
+function [ P1,obj] = GSDA(X,para,Xt,Y)
 gamma=para.gamma;  % the hyper papramter lambda
-%²»ÏàËÆĞÔÏµÊı
+%ä¸ç›¸ä¼¼æ€§ç³»æ•°
 k=para.k;
-mu=para.mu;%ÏàËÆĞÔÏµÊı
+mu=para.mu;%ç›¸ä¼¼æ€§ç³»æ•°
 beta = para.beta;
 maxiter = para.maxiter;
 dim = para.dim;
 alpha=para.alpha;
 for i = 1 : 10
-    [P,obj]=test(X,para,Xt,Y);
+    [P,obj]=myGSDA(X,para,Xt,Y);
     d=size(X,1);
     n=size(X,2);
     [tn,td] = size(Xt);
@@ -31,11 +31,11 @@ end
 end
 
 
-function [P,obj]=test(X,para,Xt,Y)
+function [P,obj]=myGSDA(X,para,Xt,Y)
 gamma=para.gamma;  % the hyper papramter lambda
-%²»ÏàËÆĞÔÏµÊı
+%ä¸ç›¸ä¼¼æ€§ç³»æ•°
 k=para.k;
-mu=para.mu;%ÏàËÆĞÔÏµÊı
+mu=para.mu;%ç›¸ä¼¼æ€§ç³»æ•°
 beta = para.beta;
 maxiter = para.maxiter;
 dim = para.dim;
@@ -47,7 +47,7 @@ Xs = X(:,1:n-tn);
 Xt = X(:,n-tn+1:end);
 Ys = Y(1:n-tn,:);
 Yt = Y(n-tn+1:end,:);
-% init ³õÊ¼»¯
+% init åˆå§‹åŒ–
 Options = [];
 Options.ReducedDim =100;
 P=PCA1(X',Options);
