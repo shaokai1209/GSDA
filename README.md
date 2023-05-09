@@ -1,7 +1,7 @@
 # GSDA
 # The code of the paper "A GENERALIZED SUBSPACE DISTRIBUTION ADAPTATION FRAMEWORK FOR CROSS-CORPUS SPEECH EMOTION RECOGNITION" (Published in ICASSP 2023, Oral, [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10097258))
 
-# Introduction ![image](https://github.com/shaokai1209/GSDA/blob/main/ICASPP_poster_GSDA_2023.pdf)
+# [Introduction](https://github.com/shaokai1209/GSDA/blob/main/ICASPP_poster_GSDA_2023.pdf)
 
 If you find our work helpful, please cite by
 
