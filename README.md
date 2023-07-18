@@ -3,7 +3,7 @@
 
 # [Introduction](https://github.com/shaokai1209/GSDA/blob/main/ICASPP_poster_GSDA_2023.pdf)
 
-If you find our work helpful, please cite by
+If you find our work helpful, please cite
 ```
 @inproceedings{li2023generalized,
   title={A Generalized Subspace Distribution Adaptation Framework for Cross-Corpus Speech Emotion Recognition},
